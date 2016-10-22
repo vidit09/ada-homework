@@ -1,0 +1,888 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_e9abe7a2b27e4812803884ac23894b6e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_e9abe7a2b27e4812803884ac23894b6e" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_e9abe7a2b27e4812803884ac23894b6e = L.map('map_e9abe7a2b27e4812803884ac23894b6e', {
+                                           center:[46.76,8.26],
+                                           zoom: 8,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_82c14d7688ad499aa070fb1f6df77167 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Map tiles by <a href="http://www.mapbox.com/m">Mapbox</a> Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+
+        
+        
+            
+
+            var marker_6f0d36936c3940109d378c9d53a36a01 = L.marker(
+                [46.51939,6.56673],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_8a4190ceb0114f6a81cf2634d735da3d = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6f0d36936c3940109d378c9d53a36a01.setIcon(icon_8a4190ceb0114f6a81cf2634d735da3d);
+            
+        
+            
+            var popup_f0a0b9260e364b5facd166fca5328df5 = L.popup({maxWidth: '300'});
+
+            
+                var html_2ea21134bc60472c9129ffcabcbb0339 = $('         <div id="html_2ea21134bc60472c9129ffcabcbb0339"                 style="width: 100.0%; height: 100.0%;">                 EPF Lausanne - EPFL</div>                 ')[0];
+                popup_f0a0b9260e364b5facd166fca5328df5.setContent(html_2ea21134bc60472c9129ffcabcbb0339);
+            
+
+            marker_6f0d36936c3940109d378c9d53a36a01.bindPopup(popup_f0a0b9260e364b5facd166fca5328df5);
+
+            
+        
+        
+            
+
+            var marker_23d82f257fbe4b0f9b5571e1bb2a3bac = L.marker(
+                [47.3763,8.54805],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_c2761703411d4874b410547c3430dc24 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_23d82f257fbe4b0f9b5571e1bb2a3bac.setIcon(icon_c2761703411d4874b410547c3430dc24);
+            
+        
+            
+            var popup_56b360c8f96b4ac3906900a8006bbb0d = L.popup({maxWidth: '300'});
+
+            
+                var html_0f997d607c004552b6d67cfb23d4c027 = $('         <div id="html_0f997d607c004552b6d67cfb23d4c027"                 style="width: 100.0%; height: 100.0%;">                 ETH Zürich - ETHZ</div>                 ')[0];
+                popup_56b360c8f96b4ac3906900a8006bbb0d.setContent(html_0f997d607c004552b6d67cfb23d4c027);
+            
+
+            marker_23d82f257fbe4b0f9b5571e1bb2a3bac.bindPopup(popup_56b360c8f96b4ac3906900a8006bbb0d);
+
+            
+        
+        
+            
+
+            var marker_ce6605a42aef4c96ad117207f77c7fc1 = L.marker(
+                [47.40311,8.61246],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_1ce7ec64e8504f68abf84043ece9f1af = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ce6605a42aef4c96ad117207f77c7fc1.setIcon(icon_1ce7ec64e8504f68abf84043ece9f1af);
+            
+        
+            
+            var popup_53f4d796c1f342e7821bbd4fe7daa35b = L.popup({maxWidth: '300'});
+
+            
+                var html_c7d4f7a0a7e24466846c8b533e29553c = $('         <div id="html_c7d4f7a0a7e24466846c8b533e29553c"                 style="width: 100.0%; height: 100.0%;">                 Eidg. Anstalt für Wasserversorgung - EAWAG</div>                 ')[0];
+                popup_53f4d796c1f342e7821bbd4fe7daa35b.setContent(html_c7d4f7a0a7e24466846c8b533e29553c);
+            
+
+            marker_ce6605a42aef4c96ad117207f77c7fc1.bindPopup(popup_53f4d796c1f342e7821bbd4fe7daa35b);
+
+            
+        
+        
+            
+
+            var marker_769ffbda5942486590ff264829ab16fd = L.marker(
+                [47.36044,8.45484],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_9aeed13a09b94592bd322c1820bb1340 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_769ffbda5942486590ff264829ab16fd.setIcon(icon_9aeed13a09b94592bd322c1820bb1340);
+            
+        
+            
+            var popup_3e22a6475f384ef0a8a3d99ead6ce478 = L.popup({maxWidth: '300'});
+
+            
+                var html_10f4f258e3f04dc9992f16f70535bb9a = $('         <div id="html_10f4f258e3f04dc9992f16f70535bb9a"                 style="width: 100.0%; height: 100.0%;">                 Eidg. Forschungsanstalt für Wald,Schnee,Land - WSL</div>                 ')[0];
+                popup_3e22a6475f384ef0a8a3d99ead6ce478.setContent(html_10f4f258e3f04dc9992f16f70535bb9a);
+            
+
+            marker_769ffbda5942486590ff264829ab16fd.bindPopup(popup_3e22a6475f384ef0a8a3d99ead6ce478);
+
+            
+        
+        
+            
+
+            var marker_a32c22a632d94490b3b0cf6869b35c01 = L.marker(
+                [47.40311,8.61246],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_2738fb83aa8049d188f37c1d11983626 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a32c22a632d94490b3b0cf6869b35c01.setIcon(icon_2738fb83aa8049d188f37c1d11983626);
+            
+        
+            
+            var popup_4cc5c4a93e1246ebac801cbf12460de9 = L.popup({maxWidth: '300'});
+
+            
+                var html_6be5fd66c96d41e0a93f773a167b8cbc = $('         <div id="html_6be5fd66c96d41e0a93f773a167b8cbc"                 style="width: 100.0%; height: 100.0%;">                 Eidg. Material und Prüfungsanstalt - EMPA</div>                 ')[0];
+                popup_4cc5c4a93e1246ebac801cbf12460de9.setContent(html_6be5fd66c96d41e0a93f773a167b8cbc);
+            
+
+            marker_a32c22a632d94490b3b0cf6869b35c01.bindPopup(popup_4cc5c4a93e1246ebac801cbf12460de9);
+
+            
+        
+        
+            
+
+            var marker_8d311cc9d0b745e190f82995c69a9899 = L.marker(
+                [47.53378,7.63856],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_36f391b302ea44a0a341929d7a550736 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8d311cc9d0b745e190f82995c69a9899.setIcon(icon_36f391b302ea44a0a341929d7a550736);
+            
+        
+            
+            var popup_c7fe409e05d549fd9ee2846bbb9f0bcb = L.popup({maxWidth: '300'});
+
+            
+                var html_1c70e2439a554bf3b68858b018dc6ea3 = $('         <div id="html_1c70e2439a554bf3b68858b018dc6ea3"                 style="width: 100.0%; height: 100.0%;">                 Fachhochschule Nordwestschweiz (ohne PH) - FHNW</div>                 ')[0];
+                popup_c7fe409e05d549fd9ee2846bbb9f0bcb.setContent(html_1c70e2439a554bf3b68858b018dc6ea3);
+            
+
+            marker_8d311cc9d0b745e190f82995c69a9899.bindPopup(popup_c7fe409e05d549fd9ee2846bbb9f0bcb);
+
+            
+        
+        
+            
+
+            var marker_382a39155f7a408ba118da94874cd3d1 = L.marker(
+                [47.42925,9.38826],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_af82ac078e194fe9a28684459dece505 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_382a39155f7a408ba118da94874cd3d1.setIcon(icon_af82ac078e194fe9a28684459dece505);
+            
+        
+            
+            var popup_58756d1704cf42da872994844ae0f3c4 = L.popup({maxWidth: '300'});
+
+            
+                var html_783fe745686f4001ab9a733241dd0ddc = $('         <div id="html_783fe745686f4001ab9a733241dd0ddc"                 style="width: 100.0%; height: 100.0%;">                 Kantonsspital St. Gallen - KSPSG</div>                 ')[0];
+                popup_58756d1704cf42da872994844ae0f3c4.setContent(html_783fe745686f4001ab9a733241dd0ddc);
+            
+
+            marker_382a39155f7a408ba118da94874cd3d1.bindPopup(popup_58756d1704cf42da872994844ae0f3c4);
+
+            
+        
+        
+            
+
+            var marker_60005dc0eb41438a8944ccceefaf8d86 = L.marker(
+                [46.94809,7.44744],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_f1801b52a1534edda2fbda86ac9ebc51 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_60005dc0eb41438a8944ccceefaf8d86.setIcon(icon_f1801b52a1534edda2fbda86ac9ebc51);
+            
+        
+            
+            var popup_c40b60ae942e4864a0df92254b90e0da = L.popup({maxWidth: '300'});
+
+            
+                var html_80ac013a04794c94987a84920b8cb6cd = $('         <div id="html_80ac013a04794c94987a84920b8cb6cd"                 style="width: 100.0%; height: 100.0%;">                 Nicht zuteilbar - NA</div>                 ')[0];
+                popup_c40b60ae942e4864a0df92254b90e0da.setContent(html_80ac013a04794c94987a84920b8cb6cd);
+            
+
+            marker_60005dc0eb41438a8944ccceefaf8d86.bindPopup(popup_c40b60ae942e4864a0df92254b90e0da);
+
+            
+        
+        
+            
+
+            var marker_4f5ccd0995124de983bad3b3c44dcee0 = L.marker(
+                [47.5385,8.23028],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_c961db61f3444df58e3bc28c130b302e = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4f5ccd0995124de983bad3b3c44dcee0.setIcon(icon_c961db61f3444df58e3bc28c130b302e);
+            
+        
+            
+            var popup_acb65cb115ec4ecfb701f74e6fb372e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_e821c2829d86439f8d69214ec8ac6620 = $('         <div id="html_e821c2829d86439f8d69214ec8ac6620"                 style="width: 100.0%; height: 100.0%;">                 Paul Scherrer Institut - PSI</div>                 ')[0];
+                popup_acb65cb115ec4ecfb701f74e6fb372e1.setContent(html_e821c2829d86439f8d69214ec8ac6620);
+            
+
+            marker_4f5ccd0995124de983bad3b3c44dcee0.bindPopup(popup_acb65cb115ec4ecfb701f74e6fb372e1);
+
+            
+        
+        
+            
+
+            var marker_366d3efd71924579b857f5675fbb76cd = L.marker(
+                [47.44496,8.05034],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_07fec3611d194feeba492429fdc8291a = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_366d3efd71924579b857f5675fbb76cd.setIcon(icon_07fec3611d194feeba492429fdc8291a);
+            
+        
+            
+            var popup_3015f9921b934d3ab437f0765206bdff = L.popup({maxWidth: '300'});
+
+            
+                var html_633217a149d547dcb47bd84acfb9ec91 = $('         <div id="html_633217a149d547dcb47bd84acfb9ec91"                 style="width: 100.0%; height: 100.0%;">                 Pädag. Hochschule Tessin (Teilschule SUPSI) - ASP</div>                 ')[0];
+                popup_3015f9921b934d3ab437f0765206bdff.setContent(html_633217a149d547dcb47bd84acfb9ec91);
+            
+
+            marker_366d3efd71924579b857f5675fbb76cd.bindPopup(popup_3015f9921b934d3ab437f0765206bdff);
+
+            
+        
+        
+            
+
+            var marker_536e7b8f4f1f491c98cf1448de24d0ca = L.marker(
+                [46.02394,8.91741],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_d1cc1606d140400d931c17b86ea88f0d = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_536e7b8f4f1f491c98cf1448de24d0ca.setIcon(icon_d1cc1606d140400d931c17b86ea88f0d);
+            
+        
+            
+            var popup_2d897ecfe357428ba7b7fe7392a609ab = L.popup({maxWidth: '300'});
+
+            
+                var html_891fab9c9ee6468eae46269c3f5c9c0a = $('         <div id="html_891fab9c9ee6468eae46269c3f5c9c0a"                 style="width: 100.0%; height: 100.0%;">                 SUP della Svizzera italiana - SUPSI</div>                 ')[0];
+                popup_2d897ecfe357428ba7b7fe7392a609ab.setContent(html_891fab9c9ee6468eae46269c3f5c9c0a);
+            
+
+            marker_536e7b8f4f1f491c98cf1448de24d0ca.bindPopup(popup_2d897ecfe357428ba7b7fe7392a609ab);
+
+            
+        
+        
+            
+
+            var marker_af88e563eb48468d88cc85b34d02e5a2 = L.marker(
+                [46.95161,8.01723],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_509f9c79964e40fc9415026c79a332da = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_af88e563eb48468d88cc85b34d02e5a2.setIcon(icon_509f9c79964e40fc9415026c79a332da);
+            
+        
+            
+            var popup_1fd955f79f8142338ff98158b42eb8ea = L.popup({maxWidth: '300'});
+
+            
+                var html_f47375fb55a7459ebb967ded5a1efbe5 = $('         <div id="html_f47375fb55a7459ebb967ded5a1efbe5"                 style="width: 100.0%; height: 100.0%;">                 Schweizer Paraplegiker Forschung - SPF</div>                 ')[0];
+                popup_1fd955f79f8142338ff98158b42eb8ea.setContent(html_f47375fb55a7459ebb967ded5a1efbe5);
+            
+
+            marker_af88e563eb48468d88cc85b34d02e5a2.bindPopup(popup_1fd955f79f8142338ff98158b42eb8ea);
+
+            
+        
+        
+            
+
+            var marker_7b2e92099ebc4bf483020cd9bef6d390 = L.marker(
+                [47.55839,7.57327],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_f92d1b2969ee4cefbd5f76085d489373 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7b2e92099ebc4bf483020cd9bef6d390.setIcon(icon_f92d1b2969ee4cefbd5f76085d489373);
+            
+        
+            
+            var popup_8ea5e9ade91a433da01530bedb035687 = L.popup({maxWidth: '300'});
+
+            
+                var html_a1d27b9975ff48c28972d6790b5599d0 = $('         <div id="html_a1d27b9975ff48c28972d6790b5599d0"                 style="width: 100.0%; height: 100.0%;">                 Universität Basel - BS</div>                 ')[0];
+                popup_8ea5e9ade91a433da01530bedb035687.setContent(html_a1d27b9975ff48c28972d6790b5599d0);
+            
+
+            marker_7b2e92099ebc4bf483020cd9bef6d390.bindPopup(popup_8ea5e9ade91a433da01530bedb035687);
+
+            
+        
+        
+            
+
+            var marker_1a8d317177aa44e0b7837512fc817a7a = L.marker(
+                [46.94809,7.44744],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_b3d76956fc134b769aceb12dce92a907 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1a8d317177aa44e0b7837512fc817a7a.setIcon(icon_b3d76956fc134b769aceb12dce92a907);
+            
+        
+            
+            var popup_d9ef8ef5042d4bb9bf266ed59a1fee3b = L.popup({maxWidth: '300'});
+
+            
+                var html_da74fcc151f942bf8af94b8a4ed8c2ba = $('         <div id="html_da74fcc151f942bf8af94b8a4ed8c2ba"                 style="width: 100.0%; height: 100.0%;">                 Universität Bern - BE</div>                 ')[0];
+                popup_d9ef8ef5042d4bb9bf266ed59a1fee3b.setContent(html_da74fcc151f942bf8af94b8a4ed8c2ba);
+            
+
+            marker_1a8d317177aa44e0b7837512fc817a7a.bindPopup(popup_d9ef8ef5042d4bb9bf266ed59a1fee3b);
+
+            
+        
+        
+            
+
+            var marker_981d83f289344f5f82eee637f3a765a2 = L.marker(
+                [47.05048,8.30635],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_20e65dbe457a42a7a9f42a47ec575c35 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_981d83f289344f5f82eee637f3a765a2.setIcon(icon_20e65dbe457a42a7a9f42a47ec575c35);
+            
+        
+            
+            var popup_b5035be5a030472b9679278fc3d07829 = L.popup({maxWidth: '300'});
+
+            
+                var html_19e085906c0345e6bb3a99fff8894c8c = $('         <div id="html_19e085906c0345e6bb3a99fff8894c8c"                 style="width: 100.0%; height: 100.0%;">                 Universität Luzern - LU</div>                 ')[0];
+                popup_b5035be5a030472b9679278fc3d07829.setContent(html_19e085906c0345e6bb3a99fff8894c8c);
+            
+
+            marker_981d83f289344f5f82eee637f3a765a2.bindPopup(popup_b5035be5a030472b9679278fc3d07829);
+
+            
+        
+        
+            
+
+            var marker_f1dc0649c9084ed581a4436fd0f8f441 = L.marker(
+                [47.42391,9.37477],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_ed84cafadcbc404da5eed41dcf49b9fe = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f1dc0649c9084ed581a4436fd0f8f441.setIcon(icon_ed84cafadcbc404da5eed41dcf49b9fe);
+            
+        
+            
+            var popup_151236de9e834c34a81b465035c18222 = L.popup({maxWidth: '300'});
+
+            
+                var html_b797e175b8404fd98cd17fe169e303eb = $('         <div id="html_b797e175b8404fd98cd17fe169e303eb"                 style="width: 100.0%; height: 100.0%;">                 Universität St. Gallen - SG</div>                 ')[0];
+                popup_151236de9e834c34a81b465035c18222.setContent(html_b797e175b8404fd98cd17fe169e303eb);
+            
+
+            marker_f1dc0649c9084ed581a4436fd0f8f441.bindPopup(popup_151236de9e834c34a81b465035c18222);
+
+            
+        
+        
+            
+
+            var marker_0fbd9a6a0fdb4e0393b3463eb4a87816 = L.marker(
+                [47.36667,8.55],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_043985ea27844cfcb6d37ca6f10baa08 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0fbd9a6a0fdb4e0393b3463eb4a87816.setIcon(icon_043985ea27844cfcb6d37ca6f10baa08);
+            
+        
+            
+            var popup_55fe6bdf81454c1aa5678c951fc04f14 = L.popup({maxWidth: '300'});
+
+            
+                var html_a42edf0f58004fd4b0f59c2cc9e5b21a = $('         <div id="html_a42edf0f58004fd4b0f59c2cc9e5b21a"                 style="width: 100.0%; height: 100.0%;">                 Universität Zürich - ZH</div>                 ')[0];
+                popup_55fe6bdf81454c1aa5678c951fc04f14.setContent(html_a42edf0f58004fd4b0f59c2cc9e5b21a);
+            
+
+            marker_0fbd9a6a0fdb4e0393b3463eb4a87816.bindPopup(popup_55fe6bdf81454c1aa5678c951fc04f14);
+
+            
+        
+        
+            
+
+            var marker_c5c7dc6a27874ba8a501fd6ed4835b70 = L.marker(
+                [46.20222,6.14569],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_107ce392a3a94e4c9cb32ef5e43a6bb2 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c5c7dc6a27874ba8a501fd6ed4835b70.setIcon(icon_107ce392a3a94e4c9cb32ef5e43a6bb2);
+            
+        
+            
+            var popup_951d3da8a3464c1190279f53012f92ff = L.popup({maxWidth: '300'});
+
+            
+                var html_ec34f9f848024c7abb1cd1848ad0543f = $('         <div id="html_ec34f9f848024c7abb1cd1848ad0543f"                 style="width: 100.0%; height: 100.0%;">                 Université de Genève - GE</div>                 ')[0];
+                popup_951d3da8a3464c1190279f53012f92ff.setContent(html_ec34f9f848024c7abb1cd1848ad0543f);
+            
+
+            marker_c5c7dc6a27874ba8a501fd6ed4835b70.bindPopup(popup_951d3da8a3464c1190279f53012f92ff);
+
+            
+        
+        
+            
+
+            var marker_84e5420b68464e3b974513ddc09e1ec8 = L.marker(
+                [47.36667,8.55],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_ee48a3a6913544b0bf036ab944946cbf = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_84e5420b68464e3b974513ddc09e1ec8.setIcon(icon_ee48a3a6913544b0bf036ab944946cbf);
+            
+        
+            
+            var popup_b149880353464974b480d6626e88112e = L.popup({maxWidth: '300'});
+
+            
+                var html_08c6e3f3078b40189b8976be955c88f8 = $('         <div id="html_08c6e3f3078b40189b8976be955c88f8"                 style="width: 100.0%; height: 100.0%;">                 Université de Lausanne - LA</div>                 ')[0];
+                popup_b149880353464974b480d6626e88112e.setContent(html_08c6e3f3078b40189b8976be955c88f8);
+            
+
+            marker_84e5420b68464e3b974513ddc09e1ec8.bindPopup(popup_b149880353464974b480d6626e88112e);
+
+            
+        
+        
+            
+
+            var marker_05fac8ca2c1443d28c3f7fd77249ced8 = L.marker(
+                [46.99179,6.931],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_e9abe7a2b27e4812803884ac23894b6e);
+            
+        
+            
+
+                var icon_31d619d2e41343d2980cb5ddc49bc35f = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_05fac8ca2c1443d28c3f7fd77249ced8.setIcon(icon_31d619d2e41343d2980cb5ddc49bc35f);
+            
+        
+            
+            var popup_6a3321c827a04a5b9317d0230a4edbd7 = L.popup({maxWidth: '300'});
+
+            
+                var html_14b071d346d049d28dc191cfbb77dab7 = $('         <div id="html_14b071d346d049d28dc191cfbb77dab7"                 style="width: 100.0%; height: 100.0%;">                 Université de Neuchâtel - NE</div>                 ')[0];
+                popup_6a3321c827a04a5b9317d0230a4edbd7.setContent(html_14b071d346d049d28dc191cfbb77dab7);
+            
+
+            marker_05fac8ca2c1443d28c3f7fd77249ced8.bindPopup(popup_6a3321c827a04a5b9317d0230a4edbd7);
+
+            
+        
+        
+        
+        </script>
+        
