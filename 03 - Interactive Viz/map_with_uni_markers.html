@@ -1,0 +1,1056 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_eefec9de4e4145e696c5db74daab8ba8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_eefec9de4e4145e696c5db74daab8ba8" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_eefec9de4e4145e696c5db74daab8ba8 = L.map('map_eefec9de4e4145e696c5db74daab8ba8', {
+                                           center:[46.76,8.26],
+                                           zoom: 8,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_d9cd798ffb7c49ed8085780fd942e690 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Map tiles by <a href="http://www.mapbox.com/m">Mapbox</a> Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+
+        
+        
+            
+
+            var marker_3df429d10006489caf7fe70bdd85ace5 = L.marker(
+                [47.60378559999999,9.0557371],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_67a45b74092941ba968d4cd4d703fcb9 = L.popup({maxWidth: '300'});
+
+            
+                var html_6ac8958161ee43a5a423a6e02cdbc57f = $('         <div id="html_6ac8958161ee43a5a423a6e02cdbc57f"                 style="width: 100.0%; height: 100.0%;">                 Biotechnologie Institut Thurgau - BITG</div>                 ')[0];
+                popup_67a45b74092941ba968d4cd4d703fcb9.setContent(html_6ac8958161ee43a5a423a6e02cdbc57f);
+            
+
+            marker_3df429d10006489caf7fe70bdd85ace5.bindPopup(popup_67a45b74092941ba968d4cd4d703fcb9);
+
+            
+        
+        
+            
+
+            var marker_9fb82ec9db7f4daf9b7579f2e51f4ba1 = L.marker(
+                [46.5189865,6.5676007],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_1effe6692b9e48e68597310583b54c83 = L.popup({maxWidth: '300'});
+
+            
+                var html_6a0442d55c1f4a929c4745c29913a352 = $('         <div id="html_6a0442d55c1f4a929c4745c29913a352"                 style="width: 100.0%; height: 100.0%;">                 EPF Lausanne - EPFL</div>                 ')[0];
+                popup_1effe6692b9e48e68597310583b54c83.setContent(html_6a0442d55c1f4a929c4745c29913a352);
+            
+
+            marker_9fb82ec9db7f4daf9b7579f2e51f4ba1.bindPopup(popup_1effe6692b9e48e68597310583b54c83);
+
+            
+        
+        
+            
+
+            var marker_ae6c476b5cab4a14b5503fc1e589a8d7 = L.marker(
+                [47.3765359,8.5480928],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_34307986eb9a403881dbcd3fa7b8613d = L.popup({maxWidth: '300'});
+
+            
+                var html_355ae1bfcb9b456fa4cb54692d79dca9 = $('         <div id="html_355ae1bfcb9b456fa4cb54692d79dca9"                 style="width: 100.0%; height: 100.0%;">                 ETH Zürich - ETHZ</div>                 ')[0];
+                popup_34307986eb9a403881dbcd3fa7b8613d.setContent(html_355ae1bfcb9b456fa4cb54692d79dca9);
+            
+
+            marker_ae6c476b5cab4a14b5503fc1e589a8d7.bindPopup(popup_34307986eb9a403881dbcd3fa7b8613d);
+
+            
+        
+        
+            
+
+            var marker_2a4602c7f9ba4c71b62ec87cbcb15aab = L.marker(
+                [47.53378,7.63856],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_6cdcaaceb05a495cb90ad8a467400f42 = L.popup({maxWidth: '300'});
+
+            
+                var html_b0a9163b5db84aee819d0c6ce547f1bc = $('         <div id="html_b0a9163b5db84aee819d0c6ce547f1bc"                 style="width: 100.0%; height: 100.0%;">                 Fachhochschule Nordwestschweiz (ohne PH) - FHNW</div>                 ')[0];
+                popup_6cdcaaceb05a495cb90ad8a467400f42.setContent(html_b0a9163b5db84aee819d0c6ce547f1bc);
+            
+
+            marker_2a4602c7f9ba4c71b62ec87cbcb15aab.bindPopup(popup_6cdcaaceb05a495cb90ad8a467400f42);
+
+            
+        
+        
+            
+
+            var marker_9bd613f3887c40c088409c8b1711112f = L.marker(
+                [46.0036778,8.951051999999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_9a8a14ba99844a7bbd2503bbad0a9fc5 = L.popup({maxWidth: '300'});
+
+            
+                var html_6159f154e30746a5ad5e62063cc834c3 = $('         <div id="html_6159f154e30746a5ad5e62063cc834c3"                 style="width: 100.0%; height: 100.0%;">                 Facoltà di Teologia di Lugano - FTL</div>                 ')[0];
+                popup_9a8a14ba99844a7bbd2503bbad0a9fc5.setContent(html_6159f154e30746a5ad5e62063cc834c3);
+            
+
+            marker_9bd613f3887c40c088409c8b1711112f.bindPopup(popup_9a8a14ba99844a7bbd2503bbad0a9fc5);
+
+            
+        
+        
+            
+
+            var marker_8c75fdd4684c4e60831442ba8d5deec0 = L.marker(
+                [46.9751954,6.771554999999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_50345be859174c1abcab6567b3fa0d32 = L.popup({maxWidth: '300'});
+
+            
+                var html_6ad3b6b0837b49d99f8a393707e8762b = $('         <div id="html_6ad3b6b0837b49d99f8a393707e8762b"                 style="width: 100.0%; height: 100.0%;">                 Haute école pédagogique BE, JU, NE - HEPBEJUNE</div>                 ')[0];
+                popup_50345be859174c1abcab6567b3fa0d32.setContent(html_6ad3b6b0837b49d99f8a393707e8762b);
+            
+
+            marker_8c75fdd4684c4e60831442ba8d5deec0.bindPopup(popup_50345be859174c1abcab6567b3fa0d32);
+
+            
+        
+        
+            
+
+            var marker_bc917189d3744b0b922ab01862277900 = L.marker(
+                [46.5613135,6.536765],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_3180708da19f423cbe5ff3c40d453b0a = L.popup({maxWidth: '300'});
+
+            
+                var html_6e6c644061cf46e1b54232145a41f840 = $('         <div id="html_6e6c644061cf46e1b54232145a41f840"                 style="width: 100.0%; height: 100.0%;">                 Haute école pédagogique du canton de Vaud - HEPL</div>                 ')[0];
+                popup_3180708da19f423cbe5ff3c40d453b0a.setContent(html_6e6c644061cf46e1b54232145a41f840);
+            
+
+            marker_bc917189d3744b0b922ab01862277900.bindPopup(popup_3180708da19f423cbe5ff3c40d453b0a);
+
+            
+        
+        
+            
+
+            var marker_1657d882f2e547eeaa3b86281a2b53ec = L.marker(
+                [47.0607979,8.3220844],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_0d549ff65c8f4fd08117a67ed13519b4 = L.popup({maxWidth: '300'});
+
+            
+                var html_b82ef0f512564790bbed837c792d9902 = $('         <div id="html_b82ef0f512564790bbed837c792d9902"                 style="width: 100.0%; height: 100.0%;">                 Hochschule Luzern - HSLU</div>                 ')[0];
+                popup_0d549ff65c8f4fd08117a67ed13519b4.setContent(html_b82ef0f512564790bbed837c792d9902);
+            
+
+            marker_1657d882f2e547eeaa3b86281a2b53ec.bindPopup(popup_0d549ff65c8f4fd08117a67ed13519b4);
+
+            
+        
+        
+            
+
+            var marker_bd4b3e30714f4ef293c99aed2c6beb97 = L.marker(
+                [47.16155000000001,8.43699],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_8459efff27864a30a9136b38a773e228 = L.popup({maxWidth: '300'});
+
+            
+                var html_362e7c8b388744d69361097f9bca178d = $('         <div id="html_362e7c8b388744d69361097f9bca178d"                 style="width: 100.0%; height: 100.0%;">                 Institut Universitaire Kurt Bösch - IUKB</div>                 ')[0];
+                popup_8459efff27864a30a9136b38a773e228.setContent(html_362e7c8b388744d69361097f9bca178d);
+            
+
+            marker_bd4b3e30714f4ef293c99aed2c6beb97.bindPopup(popup_8459efff27864a30a9136b38a773e228);
+
+            
+        
+        
+            
+
+            var marker_07ca2801fd2640c099c98f6dd627a56c = L.marker(
+                [46.65698709999999,9.578025700000001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_598711bc99ce4141bb07577afde529b5 = L.popup({maxWidth: '300'});
+
+            
+                var html_69276b247b7d4a86945c808e49922c7e = $('         <div id="html_69276b247b7d4a86945c808e49922c7e"                 style="width: 100.0%; height: 100.0%;">                 Institut für Kulturforschung Graubünden - IKG</div>                 ')[0];
+                popup_598711bc99ce4141bb07577afde529b5.setContent(html_69276b247b7d4a86945c808e49922c7e);
+            
+
+            marker_07ca2801fd2640c099c98f6dd627a56c.bindPopup(popup_598711bc99ce4141bb07577afde529b5);
+
+            
+        
+        
+            
+
+            var marker_5aa3d8ca70cf45b98e9b9d259878e976 = L.marker(
+                [46.16699879999999,8.7942643],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_2a998e14d2ea4d02affcbe40e9a7dba9 = L.popup({maxWidth: '300'});
+
+            
+                var html_6392a6b407574d3c8fe1aace6b5a1b20 = $('         <div id="html_6392a6b407574d3c8fe1aace6b5a1b20"                 style="width: 100.0%; height: 100.0%;">                 Instituto Ricerche Solari Locarno - IRSOL</div>                 ')[0];
+                popup_2a998e14d2ea4d02affcbe40e9a7dba9.setContent(html_6392a6b407574d3c8fe1aace6b5a1b20);
+            
+
+            marker_5aa3d8ca70cf45b98e9b9d259878e976.bindPopup(popup_2a998e14d2ea4d02affcbe40e9a7dba9);
+
+            
+        
+        
+            
+
+            var marker_c7421ad57fe24ef18ba85dddf12f250f = L.marker(
+                [47.359536,8.635645199999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_f48956b90f9f4d69a61a682e28235eb1 = L.popup({maxWidth: '300'});
+
+            
+                var html_10af510b877f456da96906df12030ffe = $('         <div id="html_10af510b877f456da96906df12030ffe"                 style="width: 100.0%; height: 100.0%;">                 Interkant. Hochschule für Heilpädagogik ZH - HfH</div>                 ')[0];
+                popup_f48956b90f9f4d69a61a682e28235eb1.setContent(html_10af510b877f456da96906df12030ffe);
+            
+
+            marker_c7421ad57fe24ef18ba85dddf12f250f.bindPopup(popup_f48956b90f9f4d69a61a682e28235eb1);
+
+            
+        
+        
+            
+
+            var marker_952e054af1ff48baa50fde76d4a919ff = L.marker(
+                [47.429348,9.388304],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_ebf2562746ee49cabb5a088f8dd581c7 = L.popup({maxWidth: '300'});
+
+            
+                var html_32db77beb6b14dd1ac311d614f2474c2 = $('         <div id="html_32db77beb6b14dd1ac311d614f2474c2"                 style="width: 100.0%; height: 100.0%;">                 Kantonsspital St. Gallen - KSPSG</div>                 ')[0];
+                popup_ebf2562746ee49cabb5a088f8dd581c7.setContent(html_32db77beb6b14dd1ac311d614f2474c2);
+            
+
+            marker_952e054af1ff48baa50fde76d4a919ff.bindPopup(popup_ebf2562746ee49cabb5a088f8dd581c7);
+
+            
+        
+        
+            
+
+            var marker_006841ef08304bdfaf6e0171e397f1c6 = L.marker(
+                [47.53961349999999,8.2240445],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_82847095b3cf4b7e88941cc22365b4a2 = L.popup({maxWidth: '300'});
+
+            
+                var html_ef9f94714ad4402da82d05a9d26ceec6 = $('         <div id="html_ef9f94714ad4402da82d05a9d26ceec6"                 style="width: 100.0%; height: 100.0%;">                 Paul Scherrer Institut - PSI</div>                 ')[0];
+                popup_82847095b3cf4b7e88941cc22365b4a2.setContent(html_ef9f94714ad4402da82d05a9d26ceec6);
+            
+
+            marker_006841ef08304bdfaf6e0171e397f1c6.bindPopup(popup_82847095b3cf4b7e88941cc22365b4a2);
+
+            
+        
+        
+            
+
+            var marker_842b051e62bf479ca33a2c2fd4875746 = L.marker(
+                [46.331734,8.800452900000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_c24221dbf68c449d93929e8c2492eb5a = L.popup({maxWidth: '300'});
+
+            
+                var html_5d02a452af7c4cb48136990f48101f3a = $('         <div id="html_5d02a452af7c4cb48136990f48101f3a"                 style="width: 100.0%; height: 100.0%;">                 Pädag. Hochschule Tessin (Teilschule SUPSI) - ASP</div>                 ')[0];
+                popup_c24221dbf68c449d93929e8c2492eb5a.setContent(html_5d02a452af7c4cb48136990f48101f3a);
+            
+
+            marker_842b051e62bf479ca33a2c2fd4875746.bindPopup(popup_c24221dbf68c449d93929e8c2492eb5a);
+
+            
+        
+        
+            
+
+            var marker_6eaa3fe10adc48b8b148fd5c415b9fff = L.marker(
+                [46.9479739,7.4474468],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_076a861e4dc346cfa79a47340e69ecd1 = L.popup({maxWidth: '300'});
+
+            
+                var html_a5c8183261a940bea5815b037c3477fb = $('         <div id="html_a5c8183261a940bea5815b037c3477fb"                 style="width: 100.0%; height: 100.0%;">                 Pädagogische Hochschule Bern - PHBern</div>                 ')[0];
+                popup_076a861e4dc346cfa79a47340e69ecd1.setContent(html_a5c8183261a940bea5815b037c3477fb);
+            
+
+            marker_6eaa3fe10adc48b8b148fd5c415b9fff.bindPopup(popup_076a861e4dc346cfa79a47340e69ecd1);
+
+            
+        
+        
+            
+
+            var marker_1736d51eebbd4f01b470a47148631834 = L.marker(
+                [46.65698709999999,9.578025700000001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_6677324f35b5457693c187be99cf0cf7 = L.popup({maxWidth: '300'});
+
+            
+                var html_8509ac7227c346898e88337aceaa79eb = $('         <div id="html_8509ac7227c346898e88337aceaa79eb"                 style="width: 100.0%; height: 100.0%;">                 Pädagogische Hochschule Graubünden - PHGR</div>                 ')[0];
+                popup_6677324f35b5457693c187be99cf0cf7.setContent(html_8509ac7227c346898e88337aceaa79eb);
+            
+
+            marker_1736d51eebbd4f01b470a47148631834.bindPopup(popup_6677324f35b5457693c187be99cf0cf7);
+
+            
+        
+        
+            
+
+            var marker_ed942c06fca24c1e97ea30778f2b33ba = L.marker(
+                [47.05016819999999,8.3093072],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_0186e86c035d4d9da39160c74fba3c30 = L.popup({maxWidth: '300'});
+
+            
+                var html_395ae58ab03148cb8a9d842a85c1443c = $('         <div id="html_395ae58ab03148cb8a9d842a85c1443c"                 style="width: 100.0%; height: 100.0%;">                 Pädagogische Hochschule Luzern - PHLU</div>                 ')[0];
+                popup_0186e86c035d4d9da39160c74fba3c30.setContent(html_395ae58ab03148cb8a9d842a85c1443c);
+            
+
+            marker_ed942c06fca24c1e97ea30778f2b33ba.bindPopup(popup_0186e86c035d4d9da39160c74fba3c30);
+
+            
+        
+        
+            
+
+            var marker_58c12fcddc75459492269890a8a33c41 = L.marker(
+                [47.6958897,8.6380488],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_d76c6b14ff5b4d498913a82857a173bf = L.popup({maxWidth: '300'});
+
+            
+                var html_0c19351c6a0149718477b1ff69905dea = $('         <div id="html_0c19351c6a0149718477b1ff69905dea"                 style="width: 100.0%; height: 100.0%;">                 Pädagogische Hochschule Schaffhausen - PHSH</div>                 ')[0];
+                popup_d76c6b14ff5b4d498913a82857a173bf.setContent(html_0c19351c6a0149718477b1ff69905dea);
+            
+
+            marker_58c12fcddc75459492269890a8a33c41.bindPopup(popup_d76c6b14ff5b4d498913a82857a173bf);
+
+            
+        
+        
+            
+
+            var marker_26ad9d1e8f23493fbf3d150d5916954b = L.marker(
+                [47.0207138,8.652988400000002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_29b5baf6dd3644538e5dee948322b580 = L.popup({maxWidth: '300'});
+
+            
+                var html_59ef07d3709844da9ffff9566777c759 = $('         <div id="html_59ef07d3709844da9ffff9566777c759"                 style="width: 100.0%; height: 100.0%;">                 Pädagogische Hochschule Schwyz - PHSZ</div>                 ')[0];
+                popup_29b5baf6dd3644538e5dee948322b580.setContent(html_59ef07d3709844da9ffff9566777c759);
+            
+
+            marker_26ad9d1e8f23493fbf3d150d5916954b.bindPopup(popup_29b5baf6dd3644538e5dee948322b580);
+
+            
+        
+        
+            
+
+            var marker_c47d6c2e04134debbcf3edd3897f7aa7 = L.marker(
+                [47.4244818,9.3767173],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_434f5d651d9545de9d0d194b8dfa20ca = L.popup({maxWidth: '300'});
+
+            
+                var html_89f6185215094af494184bc87b50eb13 = $('         <div id="html_89f6185215094af494184bc87b50eb13"                 style="width: 100.0%; height: 100.0%;">                 Pädagogische Hochschule St. Gallen - PHSG</div>                 ')[0];
+                popup_434f5d651d9545de9d0d194b8dfa20ca.setContent(html_89f6185215094af494184bc87b50eb13);
+            
+
+            marker_c47d6c2e04134debbcf3edd3897f7aa7.bindPopup(popup_434f5d651d9545de9d0d194b8dfa20ca);
+
+            
+        
+        
+            
+
+            var marker_ddc7615ade1744d38b48f72ccc1bfd5b = L.marker(
+                [47.60378559999999,9.0557371],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_d8262be573ca4fce839fb491e481d2bb = L.popup({maxWidth: '300'});
+
+            
+                var html_0a7dace9ebdb478789b808c7b6855260 = $('         <div id="html_0a7dace9ebdb478789b808c7b6855260"                 style="width: 100.0%; height: 100.0%;">                 Pädagogische Hochschule Thurgau - PHTG</div>                 ')[0];
+                popup_d8262be573ca4fce839fb491e481d2bb.setContent(html_0a7dace9ebdb478789b808c7b6855260);
+            
+
+            marker_ddc7615ade1744d38b48f72ccc1bfd5b.bindPopup(popup_d8262be573ca4fce839fb491e481d2bb);
+
+            
+        
+        
+            
+
+            var marker_a83b69b270e84f9b832f87a7bf799c92 = L.marker(
+                [46.1904614,7.5449226],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_1e7cbba3da1c4c0eaf2c366f5e77cb48 = L.popup({maxWidth: '300'});
+
+            
+                var html_777dbd37df954682bdbf01942d36c123 = $('         <div id="html_777dbd37df954682bdbf01942d36c123"                 style="width: 100.0%; height: 100.0%;">                 Pädagogische Hochschule Wallis - PHVS</div>                 ')[0];
+                popup_1e7cbba3da1c4c0eaf2c366f5e77cb48.setContent(html_777dbd37df954682bdbf01942d36c123);
+            
+
+            marker_a83b69b270e84f9b832f87a7bf799c92.bindPopup(popup_1e7cbba3da1c4c0eaf2c366f5e77cb48);
+
+            
+        
+        
+            
+
+            var marker_c85bfe678a8a4998a9c015cc6ad7fe2c = L.marker(
+                [47.1661672,8.5154946],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_2168ec5b77444f4cb4b63236ac1925ef = L.popup({maxWidth: '300'});
+
+            
+                var html_fcf7a541541947d4ac76f7817d3fc2c2 = $('         <div id="html_fcf7a541541947d4ac76f7817d3fc2c2"                 style="width: 100.0%; height: 100.0%;">                 Pädagogische Hochschule Zug - PHZG</div>                 ')[0];
+                popup_2168ec5b77444f4cb4b63236ac1925ef.setContent(html_fcf7a541541947d4ac76f7817d3fc2c2);
+            
+
+            marker_c85bfe678a8a4998a9c015cc6ad7fe2c.bindPopup(popup_2168ec5b77444f4cb4b63236ac1925ef);
+
+            
+        
+        
+            
+
+            var marker_0e41a3f431594fd0839bb40a2e3dbee3 = L.marker(
+                [47.3768866,8.541694],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_bb43378e76e64f779fa67e52e2bc87be = L.popup({maxWidth: '300'});
+
+            
+                var html_6727974572b2475d97c2e64fac3c11dc = $('         <div id="html_6727974572b2475d97c2e64fac3c11dc"                 style="width: 100.0%; height: 100.0%;">                 Pädagogische Hochschule Zürich - PHZFH</div>                 ')[0];
+                popup_bb43378e76e64f779fa67e52e2bc87be.setContent(html_6727974572b2475d97c2e64fac3c11dc);
+            
+
+            marker_0e41a3f431594fd0839bb40a2e3dbee3.bindPopup(popup_bb43378e76e64f779fa67e52e2bc87be);
+
+            
+        
+        
+            
+
+            var marker_6b32c4498d0647bea1c552e7e466f894 = L.marker(
+                [47.2349204,8.653571],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_7535f33376af4842a59c830c47157b27 = L.popup({maxWidth: '300'});
+
+            
+                var html_33763630d6ba47339c576b9baa6b3f41 = $('         <div id="html_33763630d6ba47339c576b9baa6b3f41"                 style="width: 100.0%; height: 100.0%;">                 Robert Walser-Stiftung Bern - RWS</div>                 ')[0];
+                popup_7535f33376af4842a59c830c47157b27.setContent(html_33763630d6ba47339c576b9baa6b3f41);
+            
+
+            marker_6b32c4498d0647bea1c552e7e466f894.bindPopup(popup_7535f33376af4842a59c830c47157b27);
+
+            
+        
+        
+            
+
+            var marker_1f2b6ea50b8240eb97c57e7818c0ed36 = L.marker(
+                [47.4788825,9.4916808],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_51cd8318fca742aba54f4c960ef44707 = L.popup({maxWidth: '300'});
+
+            
+                var html_7a0741e61c294d03ae20f9fc12561012 = $('         <div id="html_7a0741e61c294d03ae20f9fc12561012"                 style="width: 100.0%; height: 100.0%;">                 Schweiz. Hochschule für Logopädie Rorschach - SHLR</div>                 ')[0];
+                popup_51cd8318fca742aba54f4c960ef44707.setContent(html_7a0741e61c294d03ae20f9fc12561012);
+            
+
+            marker_1f2b6ea50b8240eb97c57e7818c0ed36.bindPopup(popup_51cd8318fca742aba54f4c960ef44707);
+
+            
+        
+        
+            
+
+            var marker_cb011f2504d94773b3bf77be715a8509 = L.marker(
+                [47.5595986,7.5885761],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_cb84b09d898a4ca1a73c6d6bfe15f6f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_24fb1321526d43a1abce348fdadb9839 = $('         <div id="html_24fb1321526d43a1abce348fdadb9839"                 style="width: 100.0%; height: 100.0%;">                 Staatsunabh. Theologische Hochschule Basel - STHB</div>                 ')[0];
+                popup_cb84b09d898a4ca1a73c6d6bfe15f6f9.setContent(html_24fb1321526d43a1abce348fdadb9839);
+            
+
+            marker_cb011f2504d94773b3bf77be715a8509.bindPopup(popup_cb84b09d898a4ca1a73c6d6bfe15f6f9);
+
+            
+        
+        
+            
+
+            var marker_b96971b4ea3e44cfba2a55fc12ca7d44 = L.marker(
+                [47.5607409,7.582694099999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_2a93320fbf1a4a36b41831b5a42f788e = L.popup({maxWidth: '300'});
+
+            
+                var html_1fa3cb07b6e34aa09c7e6737d8f019fd = $('         <div id="html_1fa3cb07b6e34aa09c7e6737d8f019fd"                 style="width: 100.0%; height: 100.0%;">                 Universität Basel - BS</div>                 ')[0];
+                popup_2a93320fbf1a4a36b41831b5a42f788e.setContent(html_1fa3cb07b6e34aa09c7e6737d8f019fd);
+            
+
+            marker_b96971b4ea3e44cfba2a55fc12ca7d44.bindPopup(popup_2a93320fbf1a4a36b41831b5a42f788e);
+
+            
+        
+        
+            
+
+            var marker_2c7d6fa6d71940e7a1bab75290fde1fc = L.marker(
+                [46.9479739,7.4474468],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_af27d7200b104371b1936c10219d6840 = L.popup({maxWidth: '300'});
+
+            
+                var html_6e742d87d1bc4ebe8ab8f94fc9601783 = $('         <div id="html_6e742d87d1bc4ebe8ab8f94fc9601783"                 style="width: 100.0%; height: 100.0%;">                 Universität Bern - BE</div>                 ')[0];
+                popup_af27d7200b104371b1936c10219d6840.setContent(html_6e742d87d1bc4ebe8ab8f94fc9601783);
+            
+
+            marker_2c7d6fa6d71940e7a1bab75290fde1fc.bindPopup(popup_af27d7200b104371b1936c10219d6840);
+
+            
+        
+        
+            
+
+            var marker_fc7dfa6ae1344366882e6d6a07b81187 = L.marker(
+                [47.0493716,8.3125418],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_b72b9029e764491aa99ecb71310e3121 = L.popup({maxWidth: '300'});
+
+            
+                var html_4afe8b3e1888436384697d9cf4c6a399 = $('         <div id="html_4afe8b3e1888436384697d9cf4c6a399"                 style="width: 100.0%; height: 100.0%;">                 Universität Luzern - LU</div>                 ')[0];
+                popup_b72b9029e764491aa99ecb71310e3121.setContent(html_4afe8b3e1888436384697d9cf4c6a399);
+            
+
+            marker_fc7dfa6ae1344366882e6d6a07b81187.bindPopup(popup_b72b9029e764491aa99ecb71310e3121);
+
+            
+        
+        
+            
+
+            var marker_2478d975b4e34216be36d155b164b137 = L.marker(
+                [47.4435,9.38289],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_85151b7fc8254504983a247dbe4713be = L.popup({maxWidth: '300'});
+
+            
+                var html_0b691298e5714bdb921b8d89caf1b759 = $('         <div id="html_0b691298e5714bdb921b8d89caf1b759"                 style="width: 100.0%; height: 100.0%;">                 Universität St. Gallen - SG</div>                 ')[0];
+                popup_85151b7fc8254504983a247dbe4713be.setContent(html_0b691298e5714bdb921b8d89caf1b759);
+            
+
+            marker_2478d975b4e34216be36d155b164b137.bindPopup(popup_85151b7fc8254504983a247dbe4713be);
+
+            
+        
+        
+            
+
+            var marker_4e4ce2e01d554ea38e0362c4d3b12f06 = L.marker(
+                [47.3815919,8.548171],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_631a6cec42274380b3bce9279fabb516 = L.popup({maxWidth: '300'});
+
+            
+                var html_d8aef8f5c5d64b5aaffd9291f2e9d44b = $('         <div id="html_d8aef8f5c5d64b5aaffd9291f2e9d44b"                 style="width: 100.0%; height: 100.0%;">                 Universität Zürich - ZH</div>                 ')[0];
+                popup_631a6cec42274380b3bce9279fabb516.setContent(html_d8aef8f5c5d64b5aaffd9291f2e9d44b);
+            
+
+            marker_4e4ce2e01d554ea38e0362c4d3b12f06.bindPopup(popup_631a6cec42274380b3bce9279fabb516);
+
+            
+        
+        
+            
+
+            var marker_bb834e652a6845e89a9de9483851aa1c = L.marker(
+                [46.8044934,7.1524366],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_2396298f40d64a7eb5a47265ebbbc296 = L.popup({maxWidth: '300'});
+
+            
+                var html_e8022f96c5c442739c7b4165b1b01bb3 = $('         <div id="html_e8022f96c5c442739c7b4165b1b01bb3"                 style="width: 100.0%; height: 100.0%;">                 Université de Fribourg - FR</div>                 ')[0];
+                popup_2396298f40d64a7eb5a47265ebbbc296.setContent(html_e8022f96c5c442739c7b4165b1b01bb3);
+            
+
+            marker_bb834e652a6845e89a9de9483851aa1c.bindPopup(popup_2396298f40d64a7eb5a47265ebbbc296);
+
+            
+        
+        
+            
+
+            var marker_b2583e6734224990bdb5b2d3236724cf = L.marker(
+                [46.1938472,6.1517935],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_e5144dc417264d1eadbb0b0c80244157 = L.popup({maxWidth: '300'});
+
+            
+                var html_ef96dae062b24600b38ffab7b2a41cc0 = $('         <div id="html_ef96dae062b24600b38ffab7b2a41cc0"                 style="width: 100.0%; height: 100.0%;">                 Université de Genève - GE</div>                 ')[0];
+                popup_e5144dc417264d1eadbb0b0c80244157.setContent(html_ef96dae062b24600b38ffab7b2a41cc0);
+            
+
+            marker_b2583e6734224990bdb5b2d3236724cf.bindPopup(popup_e5144dc417264d1eadbb0b0c80244157);
+
+            
+        
+        
+            
+
+            var marker_6d19c5b4b4a54f1cb2512ecf12ebb11f = L.marker(
+                [46.5210842,6.5801517],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_18bd58e2503e45b0a283075b62e2b107 = L.popup({maxWidth: '300'});
+
+            
+                var html_c82f83ae17a1401facaacb649fe21c60 = $('         <div id="html_c82f83ae17a1401facaacb649fe21c60"                 style="width: 100.0%; height: 100.0%;">                 Université de Lausanne - LA</div>                 ')[0];
+                popup_18bd58e2503e45b0a283075b62e2b107.setContent(html_c82f83ae17a1401facaacb649fe21c60);
+            
+
+            marker_6d19c5b4b4a54f1cb2512ecf12ebb11f.bindPopup(popup_18bd58e2503e45b0a283075b62e2b107);
+
+            
+        
+        
+            
+
+            var marker_32508f78baf24a9eba95058e264d3f36 = L.marker(
+                [46.99385,6.93789],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_eefec9de4e4145e696c5db74daab8ba8);
+            
+        
+            
+            var popup_05aa9114562f4312a830867a8c38fb0c = L.popup({maxWidth: '300'});
+
+            
+                var html_ed34cbb385864028a9823da49594eb3a = $('         <div id="html_ed34cbb385864028a9823da49594eb3a"                 style="width: 100.0%; height: 100.0%;">                 Université de Neuchâtel - NE</div>                 ')[0];
+                popup_05aa9114562f4312a830867a8c38fb0c.setContent(html_ed34cbb385864028a9823da49594eb3a);
+            
+
+            marker_32508f78baf24a9eba95058e264d3f36.bindPopup(popup_05aa9114562f4312a830867a8c38fb0c);
+
+            
+        
+        
+        
+        </script>
+        
